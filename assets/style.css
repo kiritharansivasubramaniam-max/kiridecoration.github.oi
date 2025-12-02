@@ -789,6 +789,90 @@ h1:hover, h2:hover, h3:hover {
     font-weight: 600;
     margin-top: 0.7rem;
 }
+/* ------ SERVICES PAGE PREMIUM UPGRADE ------ */
+
+/* Center the entire services area */
+.services-section,
+.services-container {
+    max-width: 1200px !important;
+    margin: auto !important;
+    padding: 2rem 1rem;
+}
+
+/* Improve section heading styling */
+.services-section h2,
+.services-title {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.services-section h2::after,
+.services-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 4px;
+}
+
+/* Services grid improvements */
+.services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Card style */
+.service-card {
+    padding: 1.8rem;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #fff, #f9ece7);
+    border: 1px solid rgba(176,138,82,0.25);
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+/* Title inside card */
+.service-card h3 {
+    font-size: 1.45rem;
+    line-height: 1.35;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* Description text */
+.service-card p {
+    color: #6b5b5b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+    border-color: rgba(176,138,82,0.45);
+}
+
+/* Add smooth fade animation */
+.services-grid {
+    animation: fadeUp 0.7s ease;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* ========================= README.md ========================= */
 
 # Kiri Decoration — Static Website
