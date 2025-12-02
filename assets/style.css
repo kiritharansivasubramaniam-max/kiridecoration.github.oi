@@ -510,6 +510,84 @@ h1:hover, h2:hover, h3:hover {
         font-size: 1.9rem;
     }
 }
+/* ========================= ABOUT PAGE PREMIUM STYLING ========================= */
+
+/* Soft luxurious background for About page section */
+.about-section {
+  background: linear-gradient(180deg, #fff9f6, #f3e8e3);
+  padding: 3rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  animation: fadeIn 1.5s ease;
+}
+
+/* Premium Title Styling (About Kiri Decoration, Our Approach, etc.) */
+.about-section h1,
+.about-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.about-section h1::after,
+.about-section h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: var(--gold);
+  display: block;
+  margin: 0.8rem auto 0 auto;
+  border-radius: 3px;
+}
+
+/* Improving the text readability */
+.about-section p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #4f4f4f;
+  font-size: 1rem;
+}
+
+/* Tamil quote styling block */
+.quote {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: 'Playfair Display', serif;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--gold);
+  margin: 1.5rem 0;
+  background: #fff7f2;
+  border-radius: 8px;
+}
+
+/* Founder photo premium styling */
+.founder-photo img {
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  max-width: 78%;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* Box around long text section */
+.about-content-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(176,138,82,0.25);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  margin-top: 1.5rem;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 /* ========================= README.md ========================= */
 
 # Kiri Decoration — Static Website
