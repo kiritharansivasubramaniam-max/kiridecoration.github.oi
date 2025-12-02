@@ -193,6 +193,71 @@ img {
 .nav a.contact-btn:hover {
     background: #a97a3a;
 }
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.9s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+@scroll-timeline scroll-reveal {
+    source: auto;
+    orientation: block;
+}
+
+.reveal {
+    animation: fadeUp 1s ease both;
+    animation-timeline: scroll-reveal;
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1, h2, h3 {
+    transition: color 0.3s ease, text-shadow 0.4s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: var(--gold);
+    text-shadow: 0 0 8px rgba(176, 138, 82, 0.4);
+}
+.hero h1 {
+    text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.site-header {
+    animation: slideDown 0.9s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.masonry img, .mini-gallery img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.masonry img:hover, .mini-gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
 /* ========================= assets/script.js ========================= */
 (function(){
   document.getElementById('year')?.innerText = new Date().getFullYear();
