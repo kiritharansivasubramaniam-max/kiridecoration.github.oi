@@ -105,6 +105,16 @@ img {
 .small{font-size:0.9rem;color:#6b5b5b}
 @media (max-width:800px){.grid-2{grid-template-columns:1fr}.masonry{column-count:2}.mini-gallery img{width:100%}}
 @media (max-width:520px){.masonry{column-count:1}.nav{display:none}.nav-toggle{display:block}}
+/* ============= GOLD DIVIDER UNDER EVERY H2 ============= */
+h2::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    margin: 1rem auto 2rem auto;
+    border-radius: 5px;
+    background: linear-gradient(to right, #b08a52, #e8d3a9, #b08a52);
+}
 /* Premium fade-up animation */
 .reveal {
   opacity: 0;
