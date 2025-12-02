@@ -168,6 +168,31 @@ img {
     box-shadow: 0 8px 18px rgba(0,0,0,0.18);
     border-radius: 10px;
 }
+/* Premium Navigation Styling */
+.nav a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--text);
+    padding: 0.3rem 0.6rem;
+    transition: 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.nav a:hover {
+    color: var(--gold);
+    transform: translateY(-1px);
+}
+.nav a.contact-btn {
+    background: var(--gold);
+    color: white !important;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.nav a.contact-btn:hover {
+    background: #a97a3a;
+}
 /* ========================= assets/script.js ========================= */
 (function(){
   document.getElementById('year')?.innerText = new Date().getFullYear();
