@@ -362,6 +362,60 @@ h1:hover, h2:hover, h3:hover {
         transform: translateY(0);
     }
 }
+/* ===================== PREMIUM GALLERY UPGRADE ===================== */
+
+/* Gallery container spacing */
+.page .container {
+    padding-top: 1rem;
+}
+
+/* Gallery heading improvement */
+.page h1, .page h2, .page h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--accent);
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+/* Gallery image cards */
+.gallery-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover effect */
+.gallery-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* Add spacing between images */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Subtle gradient behind gallery section */
+.page {
+    background: linear-gradient(180deg, #fdf7f3, #f9f1ec);
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+/* Caption / text under gallery */
+.page p {
+    font-size: 1rem;
+    color: #6b5b5b;
+    margin-bottom: 1rem;
+}
 /* ================= END PREMIUM PACK ================= */
 
 
