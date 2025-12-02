@@ -163,6 +163,11 @@ h2::after {
     background: linear-gradient(90deg, #b08a52, #e2c58b);
     border-radius: 3px;
 }
+/* ===== Elegant Image Shadow ===== */
+img {
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    border-radius: 10px;
+}
 /* ========================= assets/script.js ========================= */
 (function(){
   document.getElementById('year')?.innerText = new Date().getFullYear();
